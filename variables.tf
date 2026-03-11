@@ -186,3 +186,15 @@ variable "maintenance_configuration_ids" {
   default     = []
 }
 
+
+variable "workload_name" {
+  description = "Name of the workload."
+  type        = string
+  default     = "bastion"
+}
+
+variable "stack" {
+  description = "Stack name for naming."
+  type        = string
+  default     = "bastion"
+}

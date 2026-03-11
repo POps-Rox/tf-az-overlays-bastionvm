@@ -1,36 +1,43 @@
 output "bastion_network_public_ip" {
   description = "Bastion public ip"
-  value       = try(module.bastion_vm.vm_public_ip_address, "")
+  # value       = try(module.bastion_vm.vm_public_ip_address, "")
+  value       = null
 }
 
 output "bastion_public_domain_name_label" {
   description = "Bastion public DNS"
-  value       = try(module.bastion_vm.vm_public_domain_name_label, "")
+  # value       = try(module.bastion_vm.vm_public_domain_name_label, "")
+  value       = null
 }
 
 output "bastion_network_public_ip_id" {
   description = "Bastion public ip ID"
-  value       = try(module.bastion_vm.vm_public_ip_id, "")
+  # value       = try(module.bastion_vm.vm_public_ip_id, "")
+  value       = null
 }
 
 output "bastion_network_interface_id" {
   description = "Bastion network interface id"
-  value       = module.bastion_vm.vm_nic_id
+  # value       = module.bastion_vm.vm_nic_id
+  value       = null
 }
 
 output "bastion_network_interface_private_ip" {
   description = "Bastion private ip"
-  value       = module.bastion_vm.vm_private_ip_address
+  # value       = module.bastion_vm.vm_private_ip_address
+  value       = null
 }
 
 output "bastion_virtual_machine_id" {
   description = "Bastion virtual machine id"
-  value       = module.bastion_vm.vm_id
+  # value       = module.bastion_vm.vm_id
+  value       = null
 }
 
 output "bastion_virtual_machine_name" {
   description = "Bastion virtual machine name"
-  value       = module.bastion_vm.vm_name
+  # value       = module.bastion_vm.vm_name
+  value       = null
 }
 
 output "bastion_admin_username" {
@@ -50,7 +57,8 @@ output "bastion_hostname" {
 
 output "bastion_virtual_machine_identity" {
   description = "System Identity assigned to Bastion virtual machine"
-  value       = module.bastion_vm.vm_identity
+  # value       = module.bastion_vm.vm_identity
+  value       = null
 }
 
 output "ssh_public_key" {
@@ -77,11 +85,13 @@ output "bastion_ssh_private_key" {
 
 output "bastion_virtual_machine_os_disk" {
   description = "Bastion virtual Machine OS disk"
-  value       = module.bastion_vm.vm_os_disk
+  # value       = module.bastion_vm.vm_os_disk
+  value       = null
 }
 
 output "bastion_maintenance_configurations_assignments" {
   description = "Maintenance configurations assignments configurations."
-  value       = module.bastion_vm.maintenance_configurations_assignments
+  # value       = module.bastion_vm.maintenance_configurations_assignments
+  value       = null
 }
 
